@@ -64,13 +64,26 @@ enterButton.addEventListener("click", () => {
 
     let allCorrect = arrayOfDiv.every((box) => box.classList.contains("correct"))
 
-    if (allCorrect) {
-        unlockedPic.classList.add("show");
+    // if (allCorrect) {
+    //     unlockedPic.classList.add("show");
 
+    //     setTimeout(() => {
+    //         unlockedPic.classList.remove("show");
+    //     }, 2000);
+    // }
+
+    if (allCorrect){
+        const newsPaperSection = document.querySelector("#newsPaperSection")
         setTimeout(() => {
-            unlockedPic.classList.remove("show");
-        }, 2000);
+            body.innerHTML = "";
+            body.textContent = "Well done"
+        }, 500)
+        setTimeout( () => {
+            body.classList.add("displayNone")
+            newsPaperSection.classList.remove("displayNone")
+        }, 3000)
     }
+
 
     console.log(allCorrect)
 });
