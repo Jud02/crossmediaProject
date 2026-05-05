@@ -1,0 +1,42 @@
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.guessTheRebus {
+    height: 100%;
+    min-width: 28%;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    font-size: 10px;
+    color: transparent;
+    /* Döljer texten som standard */
+    transition: transform 0.2s;
+    border: 2px solid black;
+    border-radius: 30px;
+
+}
+
+/* 📱 Mobilanpassning */
+@media (max-width: 600px) {
+    .gameContainer {
+        width: 12vw;
+        height: 12vw;
+        font-size: 16px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* input,
+    button {
+        width: 100%;
+        max-width: 300px;
+
+    } */
+}

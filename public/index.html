@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="newspaper.css">
     <link rel="stylesheet" href="guessTheWord.css">
     <link rel="stylesheet" href="memory.css">
+    <link rel="stylesheet" href="guessTheRebus.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div id="newsPaperSection">
+    <div id="newsPaperSection" class="displayNone">
 
         <p id="readCarefully">Läs noggran</p>
 
@@ -35,7 +38,8 @@
                     Vissa tider verkar vara mer frekventa än andra, särskilt kvällstid.
                 </p>
                 <p>
-                    En anteckning som cirkulerar i ett vittnesmål innehåller siffran <span class="highlight">55.610</span>.
+                    En anteckning som cirkulerar i ett vittnesmål innehåller siffran <span
+                        class="highlight">55.610</span>.
                 </p>
                 <p>
                     Vad siffran syftar på är oklart.
@@ -48,7 +52,7 @@
                     Ett nytt café i området har snabbt blivit ett vanligt stopp för förbipasserande.
                     Många sitter där korta stunder innan de går vidare.
                 </p>
-                
+
                 <img src="bilder/download.jpg" alt=" ">
 
                 <p>
@@ -66,7 +70,7 @@
                 <div id="picNText">
                     <h1>Person observerad vid elinstallationer</h1>
                 </div>
-                
+
                 <img id="picSzS" src="bilder/johannes.png" alt="">
 
                 <p>
@@ -103,7 +107,7 @@
                 </p>
 
                 <p>
-                    En sammanställning av noteringar visar två värden: 
+                    En sammanställning av noteringar visar två värden:
                     <span class="highlight">55.610201</span> och <span class="highlight">12.972288</span>.
                 </p>
 
@@ -137,7 +141,7 @@
                 <p>
                     Kommunala inspektörer har börjat samla in fler rapporter från samma geografiska område.
                 </p>
-                
+
                 <img src="bilder/download2.jpg" alt=" ">
 
                 <p>
@@ -156,7 +160,7 @@
     </div>
 
     <div id="firstMission" class="displayNone"></div>
-    <div id="guessTheWord">
+    <div id="guessTheWord" class="displayNone">
         <div id="gamingArea"></div>
         <input id="guessedLetter" type="text">
         <button id="confirmLetter">Enter</button>
@@ -165,9 +169,16 @@
 
     <button class="displayNone" id="closeSectionButton" type="button">Close</button>
 
+    <div class="gameContainer">
+        <div class="guessTheRebus"></div>
+        <div class="answerSection"></div>
+        <div class="actionButtons"></div>
+    </div>
+
     <script src="firstmission.js"></script>
     <script src="guessTheWord.js"></script>
     <script src="memory.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
