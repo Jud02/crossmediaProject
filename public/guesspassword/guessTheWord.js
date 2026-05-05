@@ -79,8 +79,7 @@ enterButton.addEventListener("click", () => {
             body.textContent = "Well done"
         }, 500)
         setTimeout( () => {
-            body.classList.add("displayNone")
-            newsPaperSection.classList.remove("displayNone")
+            window.location.href = "../newspaper/newspaper.html";
         }, 3000)
     }
 

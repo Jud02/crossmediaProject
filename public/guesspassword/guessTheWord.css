@@ -20,6 +20,10 @@
     margin-top: 10px;
 }
 
+#intro h1, p {
+    margin: 0;
+}
+
 /* Varje bokstavsruta */
 .box {
     width: 10vw;
