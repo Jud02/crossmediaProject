@@ -1,1 +1,0 @@
-const hSvg = 500, 
