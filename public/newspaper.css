@@ -14,7 +14,7 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
     background: #f4ecd8;
-    border-radius: 10pX;
+    border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     position: relative;
@@ -58,12 +58,13 @@ body {
 
 #sectionOne, #sectionTwo {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     margin-top: 25px;
 }
 
 .articelSzS {
-    flex: 1;
+    flex: 1 1 300px;
     padding: 15px;
     border-right: 1px solid #999;
     position: relative;
@@ -109,6 +110,7 @@ body {
 
 .articelSzS img {
     width: 100%;
+    height: auto;
     filter: grayscale(100%);
     margin: 10px 0;
 }
@@ -138,4 +140,50 @@ body {
 #textDivFirstMission {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* 📱 MOBIL */
+@media (max-width: 768px) {
+
+    #newsPaperSection {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #navBar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #navBar h1 {
+        font-size: 18px;
+    }
+
+    #newspaperIcon {
+        height: 50px;
+        width: 50px;
+    }
+
+    #sectionOne, #sectionTwo {
+        flex-direction: column;
+    }
+
+    .articelSzS {
+        border-right: none;
+        border-bottom: 1px solid #999;
+    }
+
+    .articelSzS h1 {
+        font-size: 18px;
+    }
+
+    .articelSzS p {
+        font-size: 14px;
+    }
+
+    #picNText {
+        flex-direction: column;
+        text-align: center;
+    }
 }
