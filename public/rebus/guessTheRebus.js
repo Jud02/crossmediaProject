@@ -46,16 +46,24 @@ const rebusArray = [
 //fixa lika många svarsrutor som antal bokstäver i correctAnswer
 //fixa loop för att få ut emojies
 
-const gamingArea = document.querySelector(".gamingArea")
+const gamingArea = document.querySelector(".gamingArea");
 
 function getRebus() {
     for (let i = 0; i < rebusArray.length; i++) {
-        const img = document.createElement("img");
-        img.src = rebusArray[i].word1;
+        const img1 = document.createElement("img");
+        img1.classList.add("img1");
+        img1.src = rebusArray[i].word1;
 
-        gamingArea.appendChild(img)
+        const img2 = document.createElement("img");
+        img2.classList.add("img2");
+        img2.src = rebusArray[i].word2;
+
+        gamingArea.appendChild(img1);
+        gamingArea.appendChild(img2);
+
 
     }
 }
 
-getRebus()
+getRebus();
+
