@@ -59,6 +59,3 @@ function getRebus() {
 }
 
 getRebus()
-
-
-
